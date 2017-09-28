@@ -1,0 +1,20 @@
+# Palindrome-in-Ruby-
+#A palindrome is a word that reads the same backward or forward
+
+#(Ruby 2.2.2)
+#this test from www.testdome.com
+#==================================================================
+
+module Palindrome
+
+  def self.is_palindrome(word)
+    
+    word = word.downcase.scan(/\w/)  # chek if Lowercase words
+
+    word == word.reverse  # chek if the same word == when reversed 
+
+end
+  
+end
+
+puts Palindrome.is_palindrome('Deleveled')
